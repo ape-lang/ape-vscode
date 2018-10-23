@@ -1,0 +1,37 @@
+{
+  "name": "ape-lang",
+  "displayName": "Ape Lang",
+  "description": "Ape Language support for VSCode",
+  "repository": "https://github.com/ape-lang/ape-vscode",
+  "version": "0.0.5",
+  "publisher": "klintmane",
+  "engines": {
+    "vscode": "^1.28.0"
+  },
+  "categories": [
+    "Programming Languages"
+  ],
+  "icon": "images/icon.png",
+  "contributes": {
+    "languages": [
+      {
+        "id": "ape",
+        "aliases": [
+          "Ape",
+          "ape"
+        ],
+        "extensions": [
+          ".ape"
+        ],
+        "configuration": "./language-configuration.json"
+      }
+    ],
+    "grammars": [
+      {
+        "language": "ape",
+        "scopeName": "source.ape",
+        "path": "./syntaxes/ape.tmLanguage.json"
+      }
+    ]
+  }
+}
